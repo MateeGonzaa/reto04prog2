@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyL - Suplementos Deportivos</title>
+
+    <!-- Cargamos Bootstrap para estilos y responsive -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/slate/bootstrap.min.css" rel="stylesheet"> 
+    <!-- Para usar íconos en el sitio -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Nuestro estilo personalizad, para un diseño mas profesional -->
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+
+    <!-- Icono de la pagina -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+     <!-- Barra de navegación fija en la parte superior -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <!-- Logo / Nombre de la pagina -->
+            <a class="navbar-brand" href="#">MyL - Suplementos Deportivos</a>
+             <!-- Botón para mostrar menú en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Agregado ms-auto para alinear a la derecha -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#seccion-hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos-destacados">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal-->
+    <section class="seccion-principal" id="seccion-principal">
+        <div class="container">
+            <h1 class="principal-title">MAXIMIZA TU <span class="text-accent">RENDIMIENTO</span></h1>
+            <p class="lead mb-4">Los mejores suplementos deportivos para alcanzar tus metas</p>
+            <a href="#productos-destacados" class="btn btn-primary btn-lg">Ver Productos</a>
+        </div>
+    </section>
+   
+    <!-- Productos Destacados -->
+    <section class="productos-destacados" id="productos-destacados">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>PRODUCTOS DESTACADOS</h2>
+            </div>
+
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/PWP-3Kg-Strawberry.png?v=1718218523&width=550" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Proteína Platinum Whey Protein 3KG - Star Nutrition</h5>
+                            <p class="product-description">Es el suplemento ideal para quienes buscan maximizar su ingesta proteica de manera efectiva y sencilla. Este ultra concentrado, aislado e hidrolizado de suero se obtiene mediante métodos no agresivos, garantizando así la máxima pureza y calidad del producto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="40000">$40.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="1" data-product-name="Proteína Platinum Whey Protein 3KG">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/CreatineM-300g.png?v=1718218487" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Creatina Monohidratada 300G - Star Nutrition</h5>
+                            <p class="product-description">Es un suplemento premium diseñado para maximizar tu rendimiento y ayudarte a alcanzar tus metas fitness para mejorar el rendimiento físico y aumentar la masa muscular.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="34000">$34.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="2" data-product-name="Creatina Monohidratada 300G">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/PumpV8-WMEL_256a8bca-27cd-4ba8-8dc8-edffe507986d.png?v=1719843200" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Pre Entreno Pump V8 285G - Star Nutrition</h5>
+                            <p class="product-description">Es el nuevo pre-entreno con una fórmula 100% renovada, ideal para quienes buscan maximizar su rendimiento deportivo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="37000">$37.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="3" data-product-name="Pre Entreno Pump V8 285G">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefecios" id="beneficios">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>¿POR QUÉ ELEGIR MyL?</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-flask fa-3x mb-3"></i>
+                        <h4>Calidad Certificada</h4>
+                        <p>Todos nuestros productos pasan por rigurosos controles de calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-bolt fa-3x mb-3"></i>
+                        <h4>Resultados Comprobados</h4>
+                        <p>Formulaciones científicas para maximizar tu rendimiento.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card text-center p-4">
+                        <i class="fas fa-truck fa-3x mb-3"></i>
+                        <h4>Envío Rápido</h4>
+                        <p>Recibe tus productos en 24-48 horas después de tu compra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="contenedor-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">MyL</h5>
+                    <p>Suplementos deportivos de la más alta calidad</p>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#seccion-hero">Inicio</a></li>
+                        <li><a href="#productos-destacados">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#beneficios">Sobre Nosotros</a></li> <!-- Asumiendo que "Sobre Nosotros" se refiere a la sección de beneficios-->
+                    </ul>
+                </div>
+
+                <div class="col-md-4" id="contacto">
+                    <h5 class="footer-title">Contacto</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Deán Funes 40, Río Cuarto, Córdoba</p>
+                        <p><i class="fas fa-phone me-2"></i> +54 3584416433</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@mylsuplementos.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-3 border-top">
+                <p class="m-0">© 2025 MyL Suplementos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Tu Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Los productos del carrito se insertarán aquí -->
+                            <tr>
+                                <td colspan="5" class="text-center" id="empty-cart-message">El carrito está vacío.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end"><strong>Total del Carrito:</strong></td>
+                                <td colspan="2"><strong id="cart-total">$0</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary">Proceder al Pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (necesarios para el navbar y el modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- no utilizamos el script.js para darle mejor funcionalidad al navbar y al modal, ya que era mucho trabajo por realizar -->
+</body>
+</html>
+
+
