@@ -1,6 +1,6 @@
 README.txt
 
-Proyecto: MyL Suplementos Deportivos - Comparación Bootstrap y UnoCSS
+Proyecto: MyL Suplementos Deportivos - Adaptacion Bootstrap y UnoCSS
 
 Este archivo tiene algunas consideraciones importantes y cosas a tener en cuenta sobre cómo trabajamos con **Bootstrap** y **UnoCSS** en este proyecto. La idea es que sirva como guía rápida para cualquier integrante del grupo que necesite entender nuestras decisiones.
 
