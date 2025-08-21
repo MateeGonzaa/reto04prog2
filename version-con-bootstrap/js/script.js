@@ -1,10 +1,10 @@
-// Seleccionamos elementos clave
+// elementos clave
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const cartItemsContainer = document.getElementById('cart-items');
 const cartTotalElement = document.getElementById('cart-total');
 const cartCountElement = document.getElementById('cart-count');
 
-// Crear contenedor para notificaciones
+// contenedor para notificaciones
 const notificationContainer = document.createElement('div');
 notificationContainer.style.position = 'fixed';
 notificationContainer.style.top = '20px';
@@ -75,7 +75,7 @@ function renderCart() {
     updateCartTotal();
 }
 
-// Función para mostrar notificación profesional
+// Función para mostrar notificación
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.innerHTML = `
@@ -172,3 +172,4 @@ cartItemsContainer.addEventListener('click', (e) => {
 loadCart();
 updateCartCount();
 renderCart();
+
