@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - MyL Suplementos</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/slate/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MyL - Suplementos Deportivos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#seccion-principal">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#beneficios">Sobre Nosotros</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Productos -->
+    <section class="productos-destacados">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>NUESTROS PRODUCTOS</h2>
+                <p>Suplementos deportivos de alta calidad para maximizar tu rendimiento</p>
+            </div>
+
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/PWP-3Kg-Strawberry.png?v=1718218523&width=550" alt="Proteína Whey">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Proteína Platinum Whey Protein 3KG - Star Nutrition</h5>
+                            <p class="product-description">Es el suplemento ideal para quienes buscan maximizar su ingesta proteica de manera efectiva y sencilla. Este ultra concentrado, aislado e hidrolizado de suero se obtiene mediante métodos no agresivos, garantizando así la máxima pureza y calidad del producto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="40000">$40.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="1" data-product-name="Proteína Whey Protein 3KG">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/CreatineM-300g.png?v=1718218487" alt="Creatina">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Creatina Monohidratada 300G - Star Nutrition</h5>
+                            <p class="product-description">Es un suplemento premium diseñado para maximizar tu rendimiento y ayudarte a alcanzar tus metas fitness para mejorar el rendimiento físico y aumentar la masa muscular.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="34000">$34.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="2" data-product-name="Creatina 300G">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/PumpV8-WMEL_256a8bca-27cd-4ba8-8dc8-edffe507986d.png?v=1719843200" alt="Pre Entreno">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Pre Entreno Pump V8 285G - Star Nutrition</h5>
+                            <p class="product-description">Es el nuevo pre-entreno con una fórmula 100% renovada, ideal para quienes buscan maximizar su rendimiento deportivo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="37000">$37.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="3" data-product-name="Pre Entreno Pump V8">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/MutantMass-1.5Kg-Frutilla.png?v=1718218508" alt="Ganador de Peso">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Muttant Mass - Ganador de peso 1.5KG - Star Nutrition</h5>
+                            <p class="product-description">Es el suplemento ideal para quienes buscan maximizar su rendimiento físico y alcanzar sus objetivos de masa muscular.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="38000">$38.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="4" data-product-name="Muttant Mass">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/ZMA.png?v=1718218497" alt="ZINC">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Zinc - Magnesio - B6 X90CAPS - ZMA Star Nutrition</h5>
+                            <p class="product-description">Es un suplemento dietario diseñado para optimizar tu rendimiento físico y potenciar el desarrollo muscular. Su fórmula única combina Zinc Monometionina Aspartato, Magnesio Aspartato y Vitamina B6, elementos esenciales para incrementar tu fuerza y acelerar la recuperación.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="22000">$22.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="5" data-product-name="ZINC">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://www.goldnutrition.com.ar/images/2022/12/07/100_whey_protein_gold_nutrition_proteina_doypack_suplemento_deportivo.png" alt="ProteinGold">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Whey Protein 907g - Gold Nutrition</h5>
+                            <p class="product-description">es un Blend Premium de proteína concentrada, hidrolizada y aislada, que ofrece 28g de proteína por servicio. Este suplemento es ideal para quienes buscan un aporte significativo de aminoácidos BCAAs y L-Glutamina, fundamentales para la construcción y reparación muscular.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="30000">$30.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="6" data-product-name="ProteinGold">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://starnutrition.com.ar/cdn/shop/files/STANUT004030.png?v=1719499932" alt="Multivitamínico">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Multivitamínico ALL IN ONE X60 CAPS - Star Nutrition</h5>
+                            <p class="product-description">Complejo vitamínico esencial para energía, inmunidad y recuperación.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="24000">$24.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="7" data-product-name="Multivitamínico">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://www.goldnutrition.com.ar/images/2021/03/19/pre-work_gold_nutrition.png" alt="PREWORKGOLD">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Pre Entreno - WorkGold Mango 280G - Gold Nutrition</h5>
+                            <p class="product-description">Es el pre-entreno más explosivo del mercado, ideal para deportistas que buscan maximizar su rendimiento en cualquier disciplina. Su potente fórmula en polvo de 280 g con sabor a mango</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="25000">$25.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="8" data-product-name="PREWORKGOLD">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <img src="https://www.goldnutrition.com.ar/images/2022/03/28/fondo_creatina_monohidrato_info_nutritional_gold_nutrition.png" alt="CREATINAGOLD">
+                        </div>
+                        <div class="product-body">
+                            <h5 class="product-title">Creatina Monohidratada 300G - Gold Nutrition</h5>
+                            <p class="product-description">Es un suplemento diseñado para maximizar tu rendimiento deportivo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price" data-price="34000">$34.000</span>
+                                <button class="btn btn-sm btn-accent add-to-cart" data-product-id="9" data-product-name="CREATINAGOLD">Añadir</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+            
+    <!-- Footer -->
+    <footer class="contenedor-footer">
+        <div class="container text-center">
+            <p>© 2025 MyL Suplementos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Tu Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <tr>
+                                <td colspan="5" class="text-center">El carrito está vacío.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end"><strong>Total:</strong></td>
+                                <td colspan="2"><strong id="cart-total">$0</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Comprando</button>
+                    <button type="button" class="btn btn-primary">Proceder al Pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script carrito -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
