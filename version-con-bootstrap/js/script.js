@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<<<<<<< HEAD 
 // Seleccionamos elementos clave
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const cartItemsContainer = document.getElementById('cart-items');
@@ -348,5 +348,6 @@ cartItemsContainer.addEventListener('click', (e) => {
 loadCart();
 updateCartCount();
 renderCart();
+
 
 >>>>>>> 424c8f20fd721a09952c1bcb22328824a3e21b77
