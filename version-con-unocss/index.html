@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos - MyL Suplementos</title>
 
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- UnoCSS -->
   <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  <!-- Tu CSS adicional -->
-  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
 
@@ -32,10 +32,21 @@
     </div>
   </nav>
 
-  <!-- Catálogo de Productos -->
-  <section class="py-16 container mx-auto px-4">
+<!-- Catálogo de Productos -->
+<section class="catalogo-section relative py-16 px-4 bg-cover bg-center">
+  <div class="container mx-auto overlay rounded-xl p-8">
     <h2 class="text-center text-3xl font-bold mb-2">MAXIMIZA TU <span class="text-cyan-400">RENDIMIENTO</span></h2>
-    <p class="text-center text-lg mb-10 text-gray-400">Los mejores suplementos deportivos para alcanzar tus metas.</p>
+    <p class="text-center text-lg mb-10 text-gray-300">Los mejores suplementos deportivos para alcanzar tus metas.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Aquí van tus productos -->
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="productos.html" class="btn-accent btn-lg inline-flex items-center gap-2">Ver productos</a>
+    </div>
+  </div>
+</section>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Los 3 destacados -->
@@ -86,7 +97,7 @@
     </div>
   </div>
   </section>
-  
+
   <!-- Beneficios -->
   <section id="beneficios" class="py-16 container mx-auto px-4">
     <div class="text-center mb-10">
