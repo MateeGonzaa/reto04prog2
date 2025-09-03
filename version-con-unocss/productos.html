@@ -3,141 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos - MyL Suplementos</title>
+  <title>Catálogo - MyL Suplementos</title>
 
-  <!-- UnoCSS -->
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- UnoCSS (helpers de grillas y utilidades) -->
   <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/uno.global.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.css">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body>
 
   <!-- Navbar -->
-  <nav class="bg-gray-950">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="font-bold text-lg">MyL - Suplementos Deportivos</a>
+  <nav class="navbar bg-gray-950 text-white">
+    <div class="container flex justify-between items-center">
+      <a href="index.html" class="navbar-brand">MyL - Suplementos Deportivos</a>
       <div class="hidden md:flex space-x-6">
-        <a href="index.html#seccion-principal" class="hover:text-gray-400">Inicio</a>
-        <a href="productos.html" class="hover:text-gray-400 font-bold">Productos</a>
-        <a href="index.html#contacto" class="hover:text-gray-400">Contacto</a>
-        <a href="index.html#beneficios" class="hover:text-gray-400">Sobre Nosotros</a>
-        <a href="#" id="open-cart" class="hover:text-gray-400">
+        <a href="index.html#seccion-principal" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="index.html#contacto" class="nav-link">Contacto</a>
+        <a href="index.html#beneficios" class="nav-link">Sobre Nosotros</a>
+        <a href="#" id="open-cart" class="nav-link">
           <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Catálogo de Productos -->
-  <section class="py-16 container mx-auto px-4">
-    <div class="section-title">
-      <h2 class="section-title-h2">NUESTROS PRODUCTOS</h2>
-    </div>
+  <!-- Sección Catálogo -->
+  <section class="py-16">
+    <div class="container">
+      <h2 class="section-title text-center"><span class="text-accent">NUESTROS PRODUCTOS</span></h2>
+      <p class="lead text-center">Suplementos deportivos de alta calidad para maximizar tu rendimiento</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Producto 1 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/PWP-3Kg-Strawberry.png?v=1718218523&width=550" alt="Proteína Whey">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Proteína Whey 3KG</h5>
-          <p class="product-description">Proteína de alta pureza para ganar masa muscular y mejorar tu recuperación.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$40.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="1" data-product-name="Proteína Whey 3KG" data-price="40000">Añadir</button>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/PWP-3Kg-Strawberry.png?v=1718218523&width=550" alt="Proteína Whey">
+          </div>
+          <div class="product-body">
+            <h5 class="product-title">Proteína Platinum Whey Protein 3KG</h5>
+            <p class="product-description">Ideal para quienes buscan maximizar su ingesta proteica de manera efectiva y sencilla.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$40.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="1" data-product-name="Proteína Whey Protein 3KG" data-price="40000">Añadir</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Producto 2 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/CreatineM-300g.png?v=1718218487" alt="Creatina">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Creatina Monohidratada 300G</h5>
-          <p class="product-description">Suplemento premium para mejorar el rendimiento y aumentar la fuerza.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$34.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="2" data-product-name="Creatina 300G" data-price="34000">Añadir</button>
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/CreatineM-300g.png?v=1718218487" alt="Creatina">
+          </div>
+          <div class="product-body">
+            <h5 class="product-title">Creatina Monohidratada 300G</h5>
+            <p class="product-description">Suplemento premium diseñado para maximizar el rendimiento físico y aumentar la masa muscular.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$34.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="2" data-product-name="Creatina 300G" data-price="34000">Añadir</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Producto 3 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/PumpV8-WMEL_256a8bca-27cd-4ba8-8dc8-edffe507986d.png?v=1719843200" alt="Pre Entreno">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Pre Entreno Pump V8</h5>
-          <p class="product-description">Fórmula renovada para energía y enfoque explosivo.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$37.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="3" data-product-name="Pre Entreno Pump V8" data-price="37000">Añadir</button>
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/PumpV8-WMEL_256a8bca-27cd-4ba8-8dc8-edffe507986d.png?v=1719843200" alt="Pre Entreno">
+          </div>
+          <div class="product-body">
+            <h5 class="product-title">Pre Entreno Pump V8 285G</h5>
+            <p class="product-description">Fórmula renovada para mejorar tu resistencia y energía en cada entrenamiento.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$37.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="3" data-product-name="Pre Entreno Pump V8" data-price="37000">Añadir</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Producto 4 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/Glutamine-300g.png" alt="Glutamina">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Glutamina 300G</h5>
-          <p class="product-description">Apoya la recuperación muscular y fortalece tu sistema inmune.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$28.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="4" data-product-name="Glutamina 300G" data-price="28000">Añadir</button>
+        <!-- Producto 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/Glutamine.png?v=1718218567" alt="Glutamina">
+          </div>
+          <div class="product-body">
+            <h5 class="product-title">Glutamina 500G</h5>
+            <p class="product-description">Favorece la recuperación muscular y refuerza el sistema inmune después del entrenamiento.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$29.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="4" data-product-name="Glutamina 500G" data-price="29000">Añadir</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Producto 5 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/BCAA-500g.png" alt="BCAA">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">BCAA 500G</h5>
-          <p class="product-description">Favorece la síntesis de proteínas y evita la fatiga muscular.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$32.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="5" data-product-name="BCAA 500G" data-price="32000">Añadir</button>
+        <!-- Producto 5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/BCAA.png?v=1718218543" alt="BCAA">
+          </div>
+          <div class="product-body">
+            <h5 class="product-title">BCAA 400G</h5>
+            <p class="product-description">Aminoácidos de cadena ramificada para potenciar la síntesis proteica y reducir la fatiga.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$32.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="5" data-product-name="BCAA 400G" data-price="32000">Añadir</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Producto 6 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/Omega3-90caps.png" alt="Omega 3">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Omega 3 - 90 cápsulas</h5>
-          <p class="product-description">Apoya la salud cardiovascular y mejora la resistencia física.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$25.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="6" data-product-name="Omega 3" data-price="25000">Añadir</button>
+        <!-- Producto 6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://starnutrition.com.ar/cdn/shop/files/Omega3.png?v=1718218599" alt="Omega 3">
           </div>
-        </div>
-      </div>
-
-      <!-- Producto 7 -->
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://starnutrition.com.ar/cdn/shop/files/Multivitaminas.png" alt="Multivitamínico">
-        </div>
-        <div class="product-body">
-          <h5 class="product-title">Multivitamínico Complejo</h5>
-          <p class="product-description">Vitaminas y minerales esenciales para energía, inmunidad y recuperación.</p>
-          <div class="flex justify-between items-center mt-3">
-            <span class="product-price">$22.000</span>
-            <button class="btn-accent add-to-cart" data-product-id="7" data-product-name="Multivitamínico" data-price="22000">Añadir</button>
+          <div class="product-body">
+            <h5 class="product-title">Omega 3 90 Cáps</h5>
+            <p class="product-description">Ácidos grasos esenciales que contribuyen a la salud cardiovascular y cerebral.</p>
+            <div class="flex justify-between items-center mt-4">
+              <span class="product-price">$25.000</span>
+              <button class="btn-accent add-to-cart" data-product-id="6" data-product-name="Omega 3 90 Cáps" data-price="25000">Añadir</button>
+            </div>
           </div>
         </div>
       </div>
@@ -145,12 +135,34 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container mx-auto text-center">
-      <p>© 2025 MyL Suplementos. Todos los derechos reservados.</p>
+  <footer class="contenedor-footer">
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h5 class="footer-title">MyL</h5>
+        <p>Suplementos deportivos de la más alta calidad.</p>
+      </div>
+      <div>
+        <h5 class="footer-title">Enlaces Rápidos</h5>
+        <ul class="footer-links">
+          <li><a href="index.html#seccion-principal">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a href="index.html#beneficios">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-title">Contacto</h5>
+        <address>
+          <p><i class="fas fa-map-marker-alt"></i> Deán Funes 40, Río Cuarto, Córdoba</p>
+          <p><i class="fas fa-phone"></i> +54 3584416433</p>
+          <p><i class="fas fa-envelope"></i> info@mylsuplementos.com</p>
+        </address>
+      </div>
+    </div>
+    <div class="container text-center border-top mt-8 pt-4">
+      <p class="m-0">© 2025 MyL Suplementos. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script src="./js/script.js"></script>
 </body>
 </html>
