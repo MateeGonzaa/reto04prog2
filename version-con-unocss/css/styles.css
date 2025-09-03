@@ -34,10 +34,11 @@ body {
 }
 
 /* Sección Principal */
-.seccion-principal {
-    background-image: url('../images/fondopagina.jpg');
+.catalogo-section {
+    background-image: url("../images/fondopagina.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: #fff;
     text-align: center;
@@ -49,7 +50,8 @@ body {
     position: relative;
 }
 
-.seccion-principal::before {
+
+.catalogo-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -59,12 +61,12 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
 }
 
-.seccion-principal .container {
+.catalogo-section .container {
     position: relative;
     z-index: 1;
 }
 
-.principal-title {
+.catalogo-title {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -74,19 +76,19 @@ body {
     color: #00bcd4; /* Color de acento, ajusta según tu preferencia */
 }
 
-.seccion-principal .lead {
+.catalogo-section .lead {
     font-size: 1.25rem;
     margin-bottom: 30px;
 }
 
-.seccion-principal .btn-lg {
+.catalogo-section .btn-lg {
     padding: 15px 30px;
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.seccion-principal .btn-lg:hover {
+.catalogo-section .btn-lg:hover {
     transform: translateY(-3px);
 }
 
