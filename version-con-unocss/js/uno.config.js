@@ -35,7 +35,6 @@ export default defineConfig({
     'footer-link': 'hover:text-cyan-500 transition-colors',
   },
   rules: [
-    // Ejemplo: acento de texto como en .text-accent
     ['text-accent', { color: '#00bcd4' }],
   ]
 })
